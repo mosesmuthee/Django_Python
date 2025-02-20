@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -17,35 +18,35 @@
         <title>CarVilla</title>
 
         <!-- For favicon png -->
-		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+		<link rel="shortcut icon" type="image/icon" href="{% static '/logo/favicon.png' %}"/>
        
         <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static '/css/font-awesome.min.css '%}">
 
         <!--linear icon css-->
-		<link rel="stylesheet" href="assets/css/linearicons.css">
+		<link rel="stylesheet" href="{% static '/css/linearicons.css' %}">
 
         <!--flaticon.css-->
-		<link rel="stylesheet" href="assets/css/flaticon.css">
+		<link rel="stylesheet" href="{% static '/css/flaticon.css' %}">
 
 		<!--animate.css-->
-        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="{% static '/css/animate.css' %}">
 
         <!--owl.carousel.css-->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="{% static '/css/owl.carousel.min.css' %}">
+		<link rel="stylesheet" href="{% static '/css/owl.theme.default.min.css' %}">
 		
         <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static '/css/bootstrap.min.css'%}">
 		
 		<!-- bootsnav -->
-		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+		<link rel="stylesheet" href="{% static '/css/bootsnav.css' %}" >
         
         <!--style.css-->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="{% static '/css/style.css' %}">
         
         <!--responsive.css-->
-        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="{% static '/css/responsive.css' %}">
         
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -122,31 +123,35 @@
 									<div class="single-model-search">
 										<h2>select year</h2>
 										<div class="model-select-icon">
-											<select class="form-control">
+                                            <label>
+                                                <select class="form-control">
 
-											  	<option value="default">year</option><!-- /.option-->
+                                                      <option value="default">year</option><!-- /.option-->
 
-											  	<option value="2018">2018</option><!-- /.option-->
+                                                      <option value="2018">2018</option><!-- /.option-->
 
-											  	<option value="2017">2017</option><!-- /.option-->
-											  	<option value="2016">2016</option><!-- /.option-->
+                                                      <option value="2017">2017</option><!-- /.option-->
+                                                      <option value="2016">2016</option><!-- /.option-->
 
-											</select><!-- /.select-->
+                                                </select>
+                                            </label><!-- /.select-->
 										</div><!-- /.model-select-icon -->
 									</div>
 									<div class="single-model-search">
 										<h2>body style</h2>
 										<div class="model-select-icon">
-											<select class="form-control">
+                                            <label>
+                                                <select class="form-control">
 
-											  	<option value="default">style</option><!-- /.option-->
+                                                      <option value="default">style</option><!-- /.option-->
 
-											  	<option value="sedan">sedan</option><!-- /.option-->
+                                                      <option value="sedan">sedan</option><!-- /.option-->
 
-											  	<option value="van">van</option><!-- /.option-->
-											  	<option value="roadster">roadster</option><!-- /.option-->
+                                                      <option value="van">van</option><!-- /.option-->
+                                                      <option value="roadster">roadster</option><!-- /.option-->
 
-											</select><!-- /.select-->
+                                                </select>
+                                            </label><!-- /.select-->
 										</div><!-- /.model-select-icon -->
 									</div>
 								</div>
@@ -154,31 +159,35 @@
 									<div class="single-model-search">
 										<h2>select make</h2>
 										<div class="model-select-icon">
-											<select class="form-control">
+                                            <label>
+                                                <select class="form-control">
 
-											  	<option value="default">make</option><!-- /.option-->
+                                                      <option value="default">make</option><!-- /.option-->
 
-											  	<option value="toyota">toyota</option><!-- /.option-->
+                                                      <option value="toyota">toyota</option><!-- /.option-->
 
-											  	<option value="holden">holden</option><!-- /.option-->
-											  	<option value="maecedes-benz">maecedes-benz.</option><!-- /.option-->
+                                                      <option value="holden">holden</option><!-- /.option-->
+                                                      <option value="mercedes-benz">mercedes-benz.</option><!-- /.option-->
 
-											</select><!-- /.select-->
+                                                </select>
+                                            </label><!-- /.select-->
 										</div><!-- /.model-select-icon -->
 									</div>
 									<div class="single-model-search">
 										<h2>car condition</h2>
 										<div class="model-select-icon">
-											<select class="form-control">
+                                            <label>
+                                                <select class="form-control">
 
-											  	<option value="default">condition</option><!-- /.option-->
+                                                      <option value="default">condition</option><!-- /.option-->
 
-											  	<option value="something">something</option><!-- /.option-->
+                                                      <option value="something">something</option><!-- /.option-->
 
-											  	<option value="something">something</option><!-- /.option-->
-											  	<option value="something">something</option><!-- /.option-->
+                                                      <option value="something">something</option><!-- /.option-->
+                                                      <option value="something">something</option><!-- /.option-->
 
-											</select><!-- /.select-->
+                                                </select>
+                                            </label><!-- /.select-->
 										</div><!-- /.model-select-icon -->
 									</div>
 								</div>
@@ -186,31 +195,35 @@
 									<div class="single-model-search">
 										<h2>select model</h2>
 										<div class="model-select-icon">
-											<select class="form-control">
+                                            <label>
+                                                <select class="form-control">
 
-											  	<option value="default">model</option><!-- /.option-->
+                                                      <option value="default">model</option><!-- /.option-->
 
-											  	<option value="kia-rio">kia-rio</option><!-- /.option-->
+                                                      <option value="kia-rio">kia-rio</option><!-- /.option-->
 
-											  	<option value="mitsubishi">mitsubishi</option><!-- /.option-->
-											  	<option value="ford">ford</option><!-- /.option-->
+                                                      <option value="mitsubishi">mitsubishi</option><!-- /.option-->
+                                                      <option value="ford">ford</option><!-- /.option-->
 
-											</select><!-- /.select-->
+                                                </select>
+                                            </label><!-- /.select-->
 										</div><!-- /.model-select-icon -->
 									</div>
 									<div class="single-model-search">
 										<h2>select price</h2>
 										<div class="model-select-icon">
-											<select class="form-control">
+                                            <label>
+                                                <select class="form-control">
 
-											  	<option value="default">price</option><!-- /.option-->
+                                                      <option value="default">price</option><!-- /.option-->
 
-											  	<option value="$0.00">$0.00</option><!-- /.option-->
+                                                      <option value="$0.00">$0.00</option><!-- /.option-->
 
-											  	<option value="$0.00">$0.00</option><!-- /.option-->
-											  	<option value="$0.00">$0.00</option><!-- /.option-->
+                                                      <option value="$0.00">$0.00</option><!-- /.option-->
+                                                      <option value="$0.00">$0.00</option><!-- /.option-->
 
-											</select><!-- /.select-->
+                                                </select>
+                                            </label><!-- /.select-->
 										</div><!-- /.model-select-icon -->
 									</div>
 								</div>
@@ -289,7 +302,7 @@
 								<div class="row">
 									<div class="col-md-7 col-sm-12">
 										<div class="new-cars-img">
-											<img src="assets/images/new-cars-model/ncm1.png" alt="img"/>
+											<img src="{% static '/images/new-cars-model/ncm1.png' %}" alt="img"/>
 										</div><!--/.new-cars-img-->
 									</div>
 									<div class="col-md-5 col-sm-12">
@@ -314,7 +327,7 @@
 								<div class="row">
 									<div class="col-md-7 col-sm-12">
 										<div class="new-cars-img">
-											<img src="assets/images/new-cars-model/ncm2.png" alt="img"/>
+											<img src="{% static '/images/new-cars-model/ncm2.png' %}" alt="img"/>
 										</div><!--/.new-cars-img-->
 									</div>
 									<div class="col-md-5 col-sm-12">
@@ -339,7 +352,7 @@
 								<div class="row">
 									<div class="col-md-7 col-sm-12">
 										<div class="new-cars-img">
-											<img src="assets/images/new-cars-model/ncm3.png" alt="img"/>
+											<img src="{% static '/images/new-cars-model/ncm3.png' %}" alt="img"/>
 										</div><!--/.new-cars-img-->
 									</div>
 									<div class="col-md-5 col-sm-12">
@@ -379,7 +392,7 @@
 							<div class="single-featured-cars">
 								<div class="featured-img-box">
 									<div class="featured-cars-img">
-										<img src="assets/images/featured-cars/fc1.png" alt="cars">
+										<img src={% static '/images/featured-cars/fc1.png' %})" alt="cars">
 									</div>
 									<div class="featured-model-info">
 										<p>
@@ -403,7 +416,7 @@
 							<div class="single-featured-cars">
 								<div class="featured-img-box">
 									<div class="featured-cars-img">
-										<img src="assets/images/featured-cars/fc2.png" alt="cars">
+										<img src="{% static '/images/featured-cars/fc2.png' %}" alt="cars">
 									</div>
 									<div class="featured-model-info">
 										<p>
@@ -427,7 +440,7 @@
 							<div class="single-featured-cars">
 								<div class="featured-img-box">
 									<div class="featured-cars-img">
-										<img src="assets/images/featured-cars/fc3.png" alt="cars">
+										<img src="{% static '/images/featured-cars/fc3.png' %}" alt="cars">
 									</div>
 									<div class="featured-model-info">
 										<p>
@@ -451,7 +464,7 @@
 							<div class="single-featured-cars">
 								<div class="featured-img-box">
 									<div class="featured-cars-img">
-										<img src="assets/images/featured-cars/fc4.png" alt="cars">
+										<img src="{% static '/images/featured-cars/fc4.png' %}" alt="cars">
 									</div>
 									<div class="featured-model-info">
 										<p>
@@ -477,7 +490,7 @@
 							<div class="single-featured-cars">
 								<div class="featured-img-box">
 									<div class="featured-cars-img">
-										<img src="assets/images/featured-cars/fc4.png" alt="cars">
+										<img src="{% static '/images/featured-cars/fc4.png' %}" alt="cars">
 									</div>
 									<div class="featured-model-info">
 										<p>
@@ -501,7 +514,7 @@
 							<div class="single-featured-cars">
 								<div class="featured-img-box">
 									<div class="featured-cars-img">
-										<img src="assets/images/featured-cars/fc5.png" alt="cars">
+										<img src="{% static '/images/featured-cars/fc5.png' %}" alt="cars">
 									</div>
 									<div class="featured-model-info">
 										<p>
@@ -525,7 +538,7 @@
 							<div class="single-featured-cars">
 								<div class="featured-img-box">
 									<div class="featured-cars-img">
-										<img src="assets/images/featured-cars/fc7.png" alt="cars">
+										<img src="{% static '/images/featured-cars/fc7.png' %}" alt="cars">
 									</div>
 									<div class="featured-model-info">
 										<p>
@@ -549,7 +562,7 @@
 							<div class="single-featured-cars">
 								<div class="featured-img-box">
 									<div class="featured-cars-img">
-										<img src="assets/images/featured-cars/fc8.png" alt="cars">
+										<img src="{% static '/images/featured-cars/fc8.png' %}" alt="cars">
 									</div>
 									<div class="featured-model-info">
 										<p>
@@ -589,7 +602,7 @@
 								<div class="testimonial-description">
 									<div class="testimonial-info">
 										<div class="testimonial-img">
-											<img src="assets/images/clients/c1.png" alt="image of clients person" />
+											<img src="{% static '/images/clients/c1.png' %}" alt="image of clients person" />
 										</div><!--/.testimonial-img-->
 									</div><!--/.testimonial-info-->
 									<div class="testimonial-comment">
@@ -609,7 +622,7 @@
 								<div class="testimonial-description">
 									<div class="testimonial-info">
 										<div class="testimonial-img">
-											<img src="assets/images/clients/c2.png" alt="image of clients person" />
+											<img src="{% static '/images/clients/c2.png' %}" alt="image of clients person" />
 										</div><!--/.testimonial-img-->
 									</div><!--/.testimonial-info-->
 									<div class="testimonial-comment">
@@ -629,7 +642,7 @@
 								<div class="testimonial-description">
 									<div class="testimonial-info">
 										<div class="testimonial-img">
-											<img src="assets/images/clients/c3.png" alt="image of clients person" />
+											<img src="{% static '/images/clients/c3.png' %}" alt="image of clients person" />
 										</div><!--/.testimonial-img-->
 									</div><!--/.testimonial-info-->
 									<div class="testimonial-comment">
@@ -658,34 +671,34 @@
 					<div class="owl-carousel owl-theme brand-item">
 						<div class="item">
 							<a href="#">
-								<img src="assets/images/brand/br1.png" alt="brand-image" />
+								<img src="{% static '/images/brand/br1.png' %}" alt="brand-image" />
 							</a>
 						</div><!--/.item-->
 						<div class="item">
 							<a href="#">
-								<img src="assets/images/brand/br2.png" alt="brand-image" />
+								<img src="{% static '/images/brand/br2.png' %}" alt="brand-image" />
 							</a>
 						</div><!--/.item-->
 						<div class="item">
 							<a href="#">
-								<img src="assets/images/brand/br3.png" alt="brand-image" />
+								<img src="{% static '/images/brand/br3.png' %}" alt="brand-image" />
 							</a>
 						</div><!--/.item-->
 						<div class="item">
 							<a href="#">
-								<img src="assets/images/brand/br4.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/brand/br5.png" alt="brand-image" />
+								<img src="{% static '/images/brand/br4.png' %}" alt="brand-image" />
 							</a>
 						</div><!--/.item-->
 
 						<div class="item">
 							<a href="#">
-								<img src="assets/images/brand/br6.png" alt="brand-image" />
+								<img src="{% static '/images/brand/br5.png' %}" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+
+						<div class="item">
+							<a href="#">
+								<img src="{% static '/images/brand/br6.png' %}" alt="brand-image" />
 							</a>
 						</div><!--/.item-->
 					</div><!--/.owl-carousel-->
@@ -759,16 +772,18 @@
 						</div>
 						<div class="col-md-offset-1 col-md-3 col-sm-6">
 							<div class="single-footer-widget">
-								<h2>news letter</h2>
+								<h2>newsletter</h2>
 								<div class="footer-newsletter">
 									<p>
-										Subscribe to get latest news  update and informations
+										Subscribe to get latest news  update and information
 									</p>
 								</div>
 								<div class="hm-foot-email">
 									<div class="foot-email-box">
-										<input type="text" class="form-control" placeholder="Add Email">
-									</div><!--/.foot-email-box-->
+                                        <label>
+                                            <input type="text" class="form-control" placeholder="Add Email">
+                                        </label>
+                                    </div><!--/.foot-email-box-->
 									<div class="foot-email-subscribe">
 										<span><i class="fa fa-arrow-right"></i></span>
 									</div><!--/.foot-email-icon-->
@@ -811,24 +826,24 @@
 		
 		<!-- Include all js compiled plugins (below), or include individual files as needed -->
 
-		<script src="assets/js/jquery.js"></script>
+		<script src="{% static '/js/jquery.js' %}"></script>
         
         <!--modernizr.min.js-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 		
 		<!--bootstrap.min.js-->
-        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="{% static '/js/bootstrap.min.js' %}"></script>
 		
 		<!-- bootsnav js -->
-		<script src="assets/js/bootsnav.js"></script>
+		<script src="{% static '/js/bootsnav.js' %}"></script>
 
 		<!--owl.carousel.js-->
-        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="{% static '/js/owl.carousel.min.js' %}"></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
         <!--Custom JS-->
-        <script src="assets/js/custom.js"></script>
+        <script src="{% static '/js/custom.js' %}"></script>
         
     </body>
 	
